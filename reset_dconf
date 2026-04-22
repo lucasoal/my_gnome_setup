@@ -1,0 +1,12 @@
+# Resetar a interface (Temas, Ícones, Cursor, Fontes)
+dconf reset -f /org/gnome/desktop/interface/
+
+# Resetar extensões do Shell e dock
+dconf reset -f /org/gnome/shell/extensions/
+dconf reset -f /org/gnome/shell/favorite-apps
+
+# Resetar o Gerenciador de Janelas (Botões de fechar, janelas)
+dconf reset -f /org/gnome/desktop/wm/preferences/
+
+# Resetar o painel superior e relógio
+dconf reset -f /org/gnome/desktop/datetime/

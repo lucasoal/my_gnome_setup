@@ -1,0 +1,223 @@
+[apps/update-manager]
+launch-count=1
+launch-time=int64 1776818207
+
+[com/mattjakeman/ExtensionManager]
+last-used-version='0.5.0'
+
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1776817844
+
+[org/gnome/Characters]
+recent-characters=['⤷']
+
+[org/gnome/control-center]
+last-panel='background'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus']
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'gnome-abrt.desktop', 'gnome-system-log.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/<USERNAME>/.config/background'
+picture-uri-dark='file:///home/<USERNAME>/.config/background'
+primary-color='#000000'
+secondary-color='#000000'
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'br')]
+xkb-options=@as []
+
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+cursor-theme='Adwaita'
+document-font-name='Helvetica 11'
+font-name='Helvetica 12'
+gtk-theme='Adwaita'
+icon-theme='Adwaita'
+monospace-font-name='Monospace 11'
+
+[org/gnome/desktop/notifications]
+application-children=['apport-gtk']
+
+[org/gnome/desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/Catalina-4.png'
+primary-color='#000000'
+secondary-color='#000000'
+
+[org/gnome/desktop/session]
+idle-delay=uint32 0
+
+[org/gnome/desktop/sound]
+theme-name='freedesktop'
+
+[org/gnome/desktop/wm/preferences]
+button-layout='close,minimize:'
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/gnome-system-monitor]
+current-tab='resources'
+show-dependencies=false
+show-whose-processes='user'
+window-height=712
+window-width=879
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+columns-order=[6]
+sort-col=1
+sort-order=0
+
+[org/gnome/mutter]
+center-new-windows=true
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+
+[org/gnome/portal/filechooser/com.google.Chrome]
+last-folder-path='/home/<USERNAME>/Downloads'
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+home=['<Super>e']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>Print'
+command='flameshot gui'
+name='Flameshot PrtSc'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Alt>v'
+command='warp-cli connect'
+name='Cloudflare VPN On'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
+binding='<Shift><Control><Alt>v'
+command='warp-cli disconnect'
+name='Cloudflare VPN Off'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+
+[org/gnome/shell]
+app-picker-layout=[{'org.gnome.TwentyFortyEight.desktop': <{'position': <0>}>, 'software-properties-drivers.desktop': <{'position': <1>}>, 'sol.desktop': <{'position': <2>}>, 'snap-store_snap-store.desktop': <{'position': <3>}>, 'brave_brave.desktop': <{'position': <4>}>, 'org.gnome.Calculator.desktop': <{'position': <5>}>, 'org.gnome.Calendar.desktop': <{'position': <6>}>, 'org.gnome.Cheese.desktop': <{'position': <7>}>, 'org.gnome.Chess.desktop': <{'position': <8>}>, 'org.gnome.clocks.desktop': <{'position': <9>}>, 'com.cloudflare.WarpTaskbar.desktop': <{'position': <10>}>, 'org.gnome.Contacts.desktop': <{'position': <11>}>, 'discord_discord.desktop': <{'position': <12>}>, 'simple-scan.desktop': <{'position': <13>}>, 'org.gnome.Evolution.desktop': <{'position': <14>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <15>}>, 'org.gnome.Extensions.desktop': <{'position': <16>}>, 'firefox_firefox.desktop': <{'position': <17>}>, 'firmware-updater_firmware-updater.desktop': <{'position': <18>}>, 'org.gnome.five-or-more.desktop': <{'position': <19>}>, 'org.flameshot.Flameshot.desktop': <{'position': <20>}>, 'org.gnome.Four-in-a-row.desktop': <{'position': <21>}>, 'yelp.desktop': <{'position': <22>}>, 'org.gnome.Hitori.desktop': <{'position': <23>}>}, {'htop.desktop': <{'position': <0>}>, 'org.gnome.eog.desktop': <{'position': <1>}>, 'display-im6.q16.desktop': <{'position': <2>}>, 'org.gnome.Klotski.desktop': <{'position': <3>}>, 'gnome-language-selector.desktop': <{'position': <4>}>, 'libreoffice-startcenter.desktop': <{'position': <5>}>, 'libreoffice-calc.desktop': <{'position': <6>}>, 'libreoffice-draw.desktop': <{'position': <7>}>, 'libreoffice-impress.desktop': <{'position': <8>}>, 'libreoffice-math.desktop': <{'position': <9>}>, 'libreoffice-writer.desktop': <{'position': <10>}>, 'org.gnome.LightsOff.desktop': <{'position': <11>}>, 'org.gnome.Mahjongg.desktop': <{'position': <12>}>, 'org.gnome.Maps.desktop': <{'position': <13>}>, 'org.gnome.Mines.desktop': <{'position': <14>}>, 'org.gnome.Music.desktop': <{'position': <15>}>, 'org.gnome.Nibbles.desktop': <{'position': <16>}>, 'nvidia-settings.desktop': <{'position': <17>}>, 'postman_postman.desktop': <{'position': <18>}>, 'org.gnome.PowerStats.desktop': <{'position': <19>}>, 'org.gnome.Quadrapassel.desktop': <{'position': <20>}>, 'org.remmina.Remmina.desktop': <{'position': <21>}>, 'org.gnome.Reversi.desktop': <{'position': <22>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <23>}>}, {'org.gnome.Robots.desktop': <{'position': <0>}>, 'org.gnome.Settings.desktop': <{'position': <1>}>, 'org.gnome.Shotwell.desktop': <{'position': <2>}>, 'org.gnome.Software.desktop': <{'position': <3>}>, 'software-properties-gtk.desktop': <{'position': <4>}>, 'update-manager.desktop': <{'position': <5>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <6>}>, 'gnome-session-properties.desktop': <{'position': <7>}>, 'org.gnome.Sudoku.desktop': <{'position': <8>}>, 'org.gnome.SwellFoop.desktop': <{'position': <9>}>, 'org.gnome.Tali.desktop': <{'position': <10>}>, 'org.gnome.Taquin.desktop': <{'position': <11>}>, 'org.gnome.Tetravex.desktop': <{'position': <12>}>, 'org.gnome.TextEditor.desktop': <{'position': <13>}>, 'transmission-gtk.desktop': <{'position': <14>}>, 'Utilities': <{'position': <15>}>, 'org.gnome.Totem.desktop': <{'position': <16>}>, 'vim.desktop': <{'position': <17>}>, 'org.gnome.Weather.desktop': <{'position': <18>}>}]
+command-history=['r']
+disabled-extensions=['ubuntu-appindicators@ubuntu.com', 'tiling-assistant@ubuntu.com', 'ubuntu-dock@ubuntu.com']
+enabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'AlphabeticalAppGrid@stuarthayhurst', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'tactile@lundal.io', 'ding@rastersoft.com']
+favorite-apps=['org.gnome.SystemMonitor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'chrome-cdomkomgmfpfnfkbcpmojaleheclbakc-Default.desktop', 'chrome-lkpdomlgefbhmkoechhiagdhmnkhicbe-Default.desktop', 'chrome-cadlkienfkclaiaibeoongdcgmdikeeg-Default.desktop', 'code.desktop', 'dbeaver-ce_dbeaver-ce.desktop']
+last-selected-power-profile='performance'
+welcome-dialog-last-shown-version='46.0'
+
+[org/gnome/shell/extensions/blur-my-shell]
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=true
+background-opacity=0.80000000000000004
+custom-theme-shrink=false
+dash-max-icon-size=32
+dock-fixed=true
+dock-position='LEFT'
+extend-height=false
+height-fraction=0.5
+icon-size-fixed=false
+preferred-monitor=-2
+preferred-monitor-by-connector='HDMI-0'
+preview-size-scale=0.0
+scroll-action='switch-workspace'
+show-apps-at-top=true
+
+[org/gnome/shell/extensions/tiling-assistant]
+active-window-hint-color='rgb(211,70,21)'
+last-version-installed=46
+tiling-popup-all-workspace=true
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gnome/software]
+check-timestamp=int64 1776823204
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(819, 372)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=160
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+window-position=(665, 66)
+window-size=(1231, 902)
