@@ -259,7 +259,6 @@ setup_gnome_dconf_style() {
     if [ -f "$bg_src" ]; then
         log "Copiando background: $bg_src"
         mkdir -p "/usr/share/backgrounds"
-        # Sem aspas extras dentro do try agora
         try cp "$bg_src" "$bg_dest"
         try gsettings set org.gnome.desktop.background picture-uri "file://$bg_dest"
         try gsettings set org.gnome.desktop.background picture-uri-dark "file://$bg_dest"
@@ -267,11 +266,44 @@ setup_gnome_dconf_style() {
         log "⚠️  AVISO: Arquivo $bg_src não encontrado."
     fi
     
-    # 2. Restauração do dconf
+    # 2. Instalação do cursor
+    local cursor_zip="./src/icons/macOSCursorWhite.zip"
+    local cursor_tmp="/tmp/macos_cursor"
+    local cursor_dest="/usr/share/icons"
+    
+    if [ -f "$cursor_zip" ]; then
+        log "Instalando cursor: $cursor_zip"
+        
+        rm -rf "$cursor_tmp"
+        mkdir -p "$cursor_tmp"
+        
+        # Extrai o zip
+        try unzip -o "$cursor_zip" -d "$cursor_tmp"
+        
+        # Move para /usr/share/icons
+        try cp -r "$cursor_tmp"/* "$cursor_dest/"
+        
+        # Atualiza cache de ícones
+        try gtk-update-icon-cache "$cursor_dest" || true
+        
+        # Define cursor no GNOME
+        local cursor_name
+        cursor_name=$(ls "$cursor_tmp" | head -n 1)
+        
+        if [ -n "$cursor_name" ]; then
+            log "Aplicando cursor: $cursor_name"
+            sudo -u "$REAL_USER" dbus-run-session gsettings set org.gnome.desktop.interface cursor-theme "$cursor_name"
+        else
+            log "⚠️  AVISO: Não foi possível detectar o nome do cursor."
+        fi
+    else
+        log "⚠️  AVISO: Arquivo $cursor_zip não encontrado."
+    fi
+    
+    # 3. Restauração do dconf
     local backup_file="./src/interface.dconf"
     if [ -f "$backup_file" ]; then
         log "Carregando backup dconf: $backup_file"
-        # dconf deve rodar como o usuário real para afetar a interface dele
         sudo -u "$REAL_USER" dbus-run-session dconf load / < "$backup_file"
     else
         log "⚠️  AVISO: Arquivo $backup_file não encontrado."
