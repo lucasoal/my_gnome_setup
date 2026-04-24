@@ -312,6 +312,62 @@ setup_gnome_dconf_style() {
     pop_indent
 }
 
+install_postgresql() {
+    DB_USER="postgres"
+    DB_PSSWD="postgres"
+    DB_NAME="postgres"
+
+    log "Você está prestes a instalar e configurar o PostgreSQL com:"
+    push_indent
+
+    log "Usuário '$DB_USER' • Senha '$DB_PSSWD' • Banco '$DB_NAME'"
+    read -p "Deseja continuar? [Y/n]? " CONFIRM
+
+    if [[ "$CONFIRM" != "y" && "$CONFIRM" != "Y" ]]; then
+    log "Cancelado."
+    return 0
+    fi
+
+    log "Instalando PostgreSQL..."
+    sudo apt install -y postgresql postgresql-contrib
+
+    log "Iniciando serviço..."
+    sudo systemctl start postgresql && sudo systemctl enable postgresql
+
+    log "Criando usuário e banco..."
+    sudo -u postgres psql <<EOF
+DO
+\$do\$
+BEGIN
+   IF NOT EXISTS (
+      SELECT FROM pg_catalog.pg_roles WHERE rolname = '$DB_USER'
+   ) THEN
+      CREATE USER $DB_USER WITH PASSWORD '$DB_PSSWD';
+   END IF;
+END
+\$do\$;
+
+SELECT 'CREATE DATABASE $DB_NAME OWNER $DB_USER'
+WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = '$DB_NAME')\gexec
+
+GRANT ALL PRIVILEGES ON DATABASE $DB_NAME TO $DB_USER;
+EOF
+
+    log "Configurando autenticação (md5)..."
+    PG_HBA=$(sudo find /etc/postgresql -name pg_hba.conf | head -n 1)
+
+    sudo sed -i "s/local\s\+all\s\+all\s\+peer/local all all md5/g" "$PG_HBA"
+    sudo sed -i "s/local\s\+all\s\+postgres\s\+peer/local all postgres md5/g" "$PG_HBA"
+
+    log "Reiniciando PostgreSQL..."
+    sudo systemctl restart postgresql
+
+    log "Concluído! Banco '$DB_NAME' • Usuário '$DB_USER'"
+
+    pop_indent
+}
+
+
 # --- Execução ---
 
 main() {
@@ -328,6 +384,7 @@ main() {
     setup_gnome_and_zsh
     setup_keybindings
     setup_gnome_dconf_style
+    install_postgresql
     cleanup
 
     log "✅ PROCESSO FINALIZADO"
