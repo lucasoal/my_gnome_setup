@@ -321,7 +321,7 @@ install_postgresql() {
     push_indent
 
     log "Usuário '$DB_USER' • Senha '$DB_PSSWD' • Banco '$DB_NAME'"
-    read -p "Deseja continuar? [Y/n]? " CONFIRM
+    read -p "Deseja continuar? [Y/n] " CONFIRM
 
     if [[ "$CONFIRM" != "y" && "$CONFIRM" != "Y" ]]; then
     log "Cancelado."
@@ -389,7 +389,7 @@ main() {
 
     log "✅ PROCESSO FINALIZADO"
     
-    read -p "Deseja reiniciar o sistema agora? (y/N): " resp
+    read -p "Deseja reiniciar o sistema agora? [y/N] " resp
     [[ "$resp" =~ ^([yY][eE][sS]|[yY])$ ]] && sudo reboot
 }
 
