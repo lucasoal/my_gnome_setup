@@ -362,16 +362,16 @@ main() {
 
     log "INICIANDO SETUP DO AMBIENTE UBUNTU"
     
-    remove_stock_games
-    install_system_pkgs
-    install_snaps
-    install_external_debs
-    setup_python
-    setup_cloudflare
+    # remove_stock_games
+    # install_system_pkgs
+    # install_snaps
+    # install_external_debs
+    # setup_python
+    # setup_cloudflare
     setup_gnome_and_zsh
-    setup_keybindings
+    # setup_keybindings
     setup_gnome_dconf_style
-    install_postgresql
+    # install_postgresql
     cleanup
 
     log "✅ PROCESSO FINALIZADO"
