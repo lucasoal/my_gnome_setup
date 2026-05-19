@@ -4,6 +4,9 @@
   <br> <br>
 </div>
 
+> [!WARNING]
+> Ubuntu 24.04
+
 The script automates the installation and configuration of a full development workstation</i>
 
 <div align="center">
