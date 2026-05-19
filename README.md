@@ -5,7 +5,7 @@
 </div>
 
 > [!WARNING]
-> Ubuntu 24.04
+> Ubuntu 24.04 (Noble Numbat)
 
 The script automates the installation and configuration of a full development workstation</i>
 
