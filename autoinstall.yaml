@@ -13,7 +13,7 @@ autoinstall:
         - bat
         - bsdutils
         - build-essential
-        - cloudflare-warp
+        # - cloudflare-warp
         - code
         - curl
         - dash
