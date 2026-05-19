@@ -36,7 +36,7 @@ chmod +x install
 sudo ./install
 ```
 
-<hr> <hr> <hr>
+<div align="center">⏺ ⏺ ⏺</div>
 
 ### 📦 Packages / Softwares
 
@@ -63,7 +63,7 @@ sudo ./install
 
 - Games and related packages (`gnome-games`, `sauerbraten`, `supertux`, `steam`...)
 
-<hr> <hr> <hr>
+<div align="center">⏺ ⏺ ⏺</div>
 
 ### 🐚 Shell
 
@@ -80,7 +80,7 @@ sudo ./install
 - **Background**
   - Catalina 
 
-<hr> <hr> <hr>
+<div align="center">⏺ ⏺ ⏺</div>
 
 ### ⌨️ Keyboard Shortcuts
 
@@ -96,5 +96,3 @@ sudo ./install
 - **Cloudflare VPN Off**
   - `warp-cli disconnect`
   - `Ctrl` + `Alt` + `Shift` + `V`
-
-<hr> <hr> <hr>
