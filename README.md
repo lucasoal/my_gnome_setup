@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Ubuntu + Env Setup</h1>
+  <h1>Ubuntu Pkgs + Shell Setup</h1>
   <a href="https://github.com/lucasoal/ubntsetup/archive/refs/heads/main.zip">📁 • Download ZIP</a>
   <br> <br>
 </div>
@@ -76,9 +76,9 @@ sudo ./install
   - Oh My ZSH
     - Theme · "bira"
 - **Fonts**
-  - Interface · Helvetica 12
-  - Documents · Helvetica 11
-  - Monospace · Monospace 12
+  - **Interface** · Google Sans 12
+  - **Documents** · Google Sans 11
+  - **Monospace** · Google Sans Code 12
 - **Background**
   - Catalina 
 
