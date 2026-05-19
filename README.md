@@ -20,7 +20,8 @@
 > ```
 > <div align="center"><img src="assets/autoinstall.png" width="50%"> <br> </div>
 
-| ⚙️ **System Settings** | |
+#### ⚙️ **System Settings**
+| | |
 |-|-|
 | Region & Language | `en_US.UTF-8`       |
 | Time/Zone         | `America/Sao_Paulo` |
@@ -33,38 +34,39 @@
 | Password          | `123`               |
 | Hostname          | `computer`          |
 
-
-| 📦 **Packages/Softwares** | |
+#### 📦 **Packages/Softwares**
+| | |
 |-|-|
 | APT | `build-essential`, `ca-certificates`, `curl`, `dash`, `flameshot`, `git`, `git-lfs`, `gnome-clocks`, `gnome-shell-extension-manager`, `gnome-shell-extensions`, `gnome-tweaks`, `gnome-weather`, `htop`, `kdenlive`, `make`, `nodejs`, `python3-pip`, `python3-venv`, `remmina`, `snapd`, `software-properties-common`, `tilix`, `tree`, `unzip`, `vim`, `wget`, `whois`, `zsh` |
 | Snap | `brave`, `dbeaver-ce`, `discord`, `postman` |
 
-### ⚜️ Install
-
-**Direct install (recommended)**
-
-```sh
-# using cURL
-curl -fsSL https://raw.githubusercontent.com/lucasoal/ubntsetup/main/install | sudo bash
-```
-
-```sh
-# using Wget
-wget -qO- https://raw.githubusercontent.com/lucasoal/ubntsetup/main/install | sudo bash
-```
-
-**Manual installation**
-```sh
-git clone https://github.com/lucasoal/ubntsetup.git
-cd ubntsetup 
-chmod +x install
-sudo ./install
-```
+## 2. install.sh
 
 > [!IMPORTANT]
-> Use [install](./install) after install the OS.
+> Use [install](./install) **AFTER** install the OS.
 
-| 📦 **Packages/Softwares** | |
+- **Direct install (recommended)**
+  ```sh
+  # using cURL
+  curl -fsSL https://raw.githubusercontent.com/lucasoal/ubntsetup/main/install | sudo bash
+  ```
+
+  ```sh
+  # using Wget
+  wget -qO- https://raw.githubusercontent.com/lucasoal/ubntsetup/main/install | sudo bash
+  ```
+
+- **Manual installation**
+  ```sh
+  git clone https://github.com/lucasoal/ubntsetup
+  cd ubntsetup 
+  chmod +x install && sudo ./install
+  ```
+
+
+#### 📦 **Packages/Softwares**
+
+| | |
 |-|-|
 | DEB | `Google Chrome`, `VS Code`               |
 | PPA Deadsnakes | Python `3.10`, `3.12`, `3.14` |
@@ -72,7 +74,8 @@ sudo ./install
 | 🗑️ **Remove** |                                |
 | Games & related pkgs | `gnome-games`, `sauerbraten`, `supertux`, `steam`... |
 
-| 👁️ Visual | |
+#### 👁️ Visual
+| | |
 |-|-|
 | 🖥️ **Terminal**                         |                       
 | Shell             | ZSH (Oh My ZSH)     |
@@ -87,7 +90,8 @@ sudo ./install
 | Gnome | [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid), [Blur my Shell](https://extensions.gnome.org/extension/3193/blur-my-shell), [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock), [Tactile](https://extensions.gnome.org/extension/4548/tactile), [Desktop Icons NG (DING)](https://extensions.gnome.org/extension/2087/desktop-icons-ng-ding), [Ubuntu AppIndicators](https://extensions.gnome.org/extension/1301/ubuntu-appindicators), [Ubuntu Tiling ](https://extensions.gnome.org/extension/3733/tiling-assistant)
 
 
-| ⌨️ Keyboard Shortcuts | | |
+### ⌨️ Keyboard Shortcuts
+| | | |
 |-|-|-|
 | Flameshot PrtSc    | `flameshot gui`       | `Super` + `PrtSc`              |
 | Home Folder        | `nautilus $HOME`      | `Super` + `E`                  |
