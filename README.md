@@ -45,11 +45,10 @@ sudo ./install
 
 > [!IMPORTANT]
 > Use [autoinstall.yaml](autoinstall.yaml) during the instalation.
->   ```
->   https://raw.githubusercontent.com/lucasoal/ubntsetup/refs/heads/main/autoinstall.yaml
->   ```
->
-> <img src="assets/autoinstall.png" width="40%"> <br>
+> ```
+> https://raw.githubusercontent.com/lucasoal/ubntsetup/refs/heads/main/autoinstall.yaml
+> ```
+> <div align="center"><img src="assets/autoinstall.png" width="50%"> <br> </div>
 
 - **APT**
   - `build-essential` | `curl` | `flameshot` | `git` | `gnome-clocks` | `gnome-shell-extension-manager` | `gnome-tweaks` | `gnome-weather` | `htop` | `jq` | `make` | `nodejs` | `python3-pip` | `python3-venv` | `remmina` | `software-properties-common` | `tar` | `tree` | `unzip` | `vim` | `wget` | `zip` | `zsh`
