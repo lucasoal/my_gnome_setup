@@ -60,7 +60,7 @@ autoinstall:
         - libotf1
         - libpinyin-data
         - libpinyin15
-        - linux-generic-hwe-24.04
+        # - linux-generic-hwe-24.04
         - linux-modules-nvidia-580-generic-hwe-24.04
         - login
         - lsb-release
