@@ -123,12 +123,13 @@ install_external_debs() {
     
     log "Baixando Google Chrome..."
     try wget -q -P "$tmp_dir" https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    try sudo apt install -y "$tmp_dir"/google*.deb
     
     log "Baixando VS Code..."
     try wget -q -O "$tmp_dir/vs-code.deb" "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
     
     log "Instalando arquivos baixados..."
-    try sudo apt install -y "$tmp_dir"/*.deb
+    try sudo apt install -y "$tmp_dir"/*code*.deb
     rm -rf "$tmp_dir"
     pop_indent
 }
@@ -138,7 +139,7 @@ setup_python() {
     push_indent
     try sudo add-apt-repository -y ppa:deadsnakes/ppa
     try sudo apt update
-    local py_versions=(python3.10 python3.11 python3.12 python3.13)
+    local py_versions=(python3.10 python3.12 python3.14)
     for v in "${py_versions[@]}"; do
         log "Instalando: $v"
         try sudo apt install -y "$v"
@@ -149,10 +150,10 @@ setup_python() {
 setup_cloudflare() {
     log "Cloudflare WARP (1.1.1.1)"
     push_indent
-    try curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloudflare-warp.gpg
-    echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list > /dev/null
-    try sudo apt update
-    try sudo apt install -y cloudflare-warp
+    try curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
+
+    try sudo apt-get update && sudo apt-get install -y cloudflare-warp
     log "Registrando dispositivo..."
     try "yes | warp-cli registration new"
     pop_indent
@@ -370,7 +371,7 @@ main() {
     setup_gnome_and_zsh
     setup_keybindings
     setup_gnome_dconf_style
-    install_postgresql
+    # install_postgresql
     cleanup
 
     log "✅ PROCESSO FINALIZADO"
