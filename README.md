@@ -28,7 +28,6 @@
 | Time/Zone         | `America/Sao_Paulo` |
 | ⌨️ **Keyboard**                         |
 | Layout            | `br`                |
-| Variant           | `abnt2`             |
 | 👤 **User**                             |
 | Real Name         | `Username`          |
 | Username          | `user`              |
