@@ -94,7 +94,7 @@
 ### ⌨️ Keyboard Shortcuts
 | | | |
 |-|-|-|
-| Flameshot PrtSc    | `flameshot gui`       | `Super` + `PrtSc`              |
-| Home Folder        | `nautilus $HOME`      | `Super` + `E`                  |
-| Cloudflare VPN On  | `warp-cli connect`    | `Ctrl` + `Alt` + `V`           |
-| Cloudflare VPN Off | `warp-cli disconnect` | `Ctrl` + `Alt` + `Shift` + `V` |
+| Flameshot PrtSc    | `flameshot gui`       | `Super`+`PrtSc`          |
+| Home Folder        | `nautilus $HOME`      | `Super`+`E`              |
+| Cloudflare VPN On  | `warp-cli connect`    | `Ctrl`+`Alt`+`V`         |
+| Cloudflare VPN Off | `warp-cli disconnect` | `Ctrl`+`Alt`+`Shift`+`V` |
