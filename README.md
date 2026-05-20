@@ -1,4 +1,6 @@
-# Ubuntu Pkgs + Shell Setup
+<div align="center">
+  <h1>Ubuntu Pkgs + Shell Setup</h1>
+</div>
 
 > [!WARNING]
 > Ubuntu 24.04 (Noble Numbat)
@@ -11,7 +13,9 @@
 
 <hr>
 
-## 1. autoinstall.yaml
+<div align="center">
+  <h1>1. autoinstall.yaml</h1>
+</div>
 
 > [!IMPORTANT]
 > Use [autoinstall.yaml](autoinstall.yaml) during the instalation.
@@ -40,7 +44,10 @@
 | APT | `build-essential`, `ca-certificates`, `curl`, `dash`, `flameshot`, `git`, `git-lfs`, `gnome-clocks`, `gnome-shell-extension-manager`, `gnome-shell-extensions`, `gnome-tweaks`, `gnome-weather`, `htop`, `kdenlive`, `make`, `nodejs`, `python3-pip`, `python3-venv`, `remmina`, `snapd`, `software-properties-common`, `tilix`, `tree`, `unzip`, `vim`, `wget`, `whois`, `zsh` |
 | Snap | `brave`, `dbeaver-ce`, `discord`, `postman` |
 
-## 2. install.sh
+
+<div align="center">
+  <h1>2. install.sh</h1>
+</div>
 
 > [!IMPORTANT]
 > Use [install](./install) **AFTER** install the OS.
